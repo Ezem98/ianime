@@ -22,11 +22,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} flex flex-col`}>
+      <body className={`${inter.className} h-full`}>
         <header className="bg-[#333333] pt-2 pb-2 pl-4 pr-4 flex justify-between items-center">
-          <div className="text-white font-bold text-xl">
-            Anime Recommendation
-          </div>
+          <div className="text-white font-bold text-xl">IAnime</div>
           <nav className="flex space-x-4">
             <Link className="text-white" href="#">
               Guideline
@@ -47,7 +45,7 @@ export default function RootLayout({
           <Button className="bg-yellow-400 text-black">Join Us</Button>
         </header>
         <div className="bg-[#F2E9D0] p-2 text-dark">
-          <div className="bg-white dark:bg-dark max-w-8xl rounded-2xl shadow-xl">
+          <div className="bg-white dark:bg-dark rounded-2xl shadow-xl">
             <Provider>{children}</Provider>
           </div>
         </div>
